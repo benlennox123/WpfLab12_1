@@ -13,7 +13,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <ContentPresenter x:Name="content"  Grid.Row="1" HorizontalAlignment="Center" Content="Checked"/>
+                <ContentPresenter x:Name="content"  Grid.Row="1" HorizontalAlignment="Center" Content="UnChecked"/>
                 <Rectangle Grid.Row="0" RadiusX="5" RadiusY="5" Width="30" Height="30" Stroke="DarkGray" StrokeThickness="4" HorizontalAlignment="Center"/>
                 <Ellipse x:Name="point" Grid.Row="0" Fill="DarkGray" Width="10" Height="10" Opacity="0" HorizontalAlignment="Center"/>
                 <Path x:Name="iks" Stroke="DarkGray" StrokeThickness="4" HorizontalAlignment="Center" Opacity="0">
@@ -32,7 +32,7 @@
             <ControlTemplate.Triggers>
                 <Trigger Property="IsChecked" Value="False">
                     <Setter TargetName="iks" Property="Opacity" Value="1"/>
-                    <Setter TargetName="content" Property="Content" Value="UnChecked"/>
+                    <Setter TargetName="content" Property="Content" Value="Checked"/>
                 </Trigger>
                 <Trigger Property="IsChecked" Value="{x:Null}">
                     <Setter TargetName="point" Property="Opacity" Value="1"/>
